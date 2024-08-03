@@ -9,5 +9,7 @@ public class Main {
         book1.setYear(2020);
         System.out.println("title: " + book1.getTitle() + ", Author: " + book1.getAuthor() + ", year: " + book1.getYear());
         System.out.println(book1.toString());
+        System.out.println(book1.hashCode());
+        System.out.println(book2.equals(book1));
     }
 }
