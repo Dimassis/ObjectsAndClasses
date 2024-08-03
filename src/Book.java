@@ -1,13 +1,11 @@
-import javax.swing.*;
-
 public class Book {
     private String title;
-    private String author;
+    private Author author;
     private int year;
 
     Book(String title, String authorFirstName, String authorLastName, int year) {
         this.title = title;
-        this.author = authorLastName + " " + authorFirstName;
+        this.author = new Author(authorFirstName, authorLastName);
         this.year = year;
     }
 
@@ -17,20 +15,12 @@ public class Book {
 
 
     public String getAuthor() {
-        return author;
+        return author.getFirstName() + " " + author.getLastName();
     }
-
     public int getYear() {
         return year;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public void setAuthor(String authorFirstName, String authorLastName) {
-        this.author = authorLastName + " " + authorFirstName;
-    }
 
     public void setYear(int year) {
         this.year = year;
