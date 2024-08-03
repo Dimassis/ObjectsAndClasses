@@ -8,5 +8,6 @@ public class Main {
         System.out.println("title: " + book2.getTitle() + ", Author: " + book2.getAuthor() + ", year: " + book2.getYear());
         book1.setYear(2020);
         System.out.println("title: " + book1.getTitle() + ", Author: " + book1.getAuthor() + ", year: " + book1.getYear());
+        System.out.println(book1.toString());
     }
 }
