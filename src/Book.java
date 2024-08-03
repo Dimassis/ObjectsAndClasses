@@ -2,8 +2,6 @@ import javax.swing.*;
 
 public class Book {
     private String title;
-    private String authorFirstName;
-    private String authorLastName;
     private String author;
     private int year;
 
@@ -30,8 +28,8 @@ public class Book {
         this.title = title;
     }
 
-    public void setAuthor(String author) {
-        this.author = authorFirstName + " " + authorLastName;
+    public void setAuthor(String authorFirstName, String authorLastName) {
+        this.author = authorLastName + " " + authorFirstName;
     }
 
     public void setYear(int year) {
